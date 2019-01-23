@@ -1,0 +1,85 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:layout_margin="10dp"
+    android:gravity="center"
+	android:orientation="vertical">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="vertical">
+		
+		<RadioGroup
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/mainCountryRadio"
+			android:orientation="horizontal">
+			
+			<RadioButton
+				android:id="@+id/countryKR"
+				android:text="KR"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:checked="true"/>
+			
+			<RadioButton
+				android:id="@+id/countryUS"
+				android:text="US"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+			
+			<RadioButton
+				android:id="@+id/countryHK"
+				android:text="HK"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+			
+		</RadioGroup>
+		
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="vertical">
+		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/main_text_input" />
+		
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/mainDeviceInput"
+			android:hint="@string/main_edittext_hint" />
+		
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/main_button_check"
+			android:onClick="check" />
+		
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:orientation="vertical">
+		
+		<androidx.recyclerview.widget.RecyclerView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/resultRecycler" />
+		
+	</LinearLayout>
+
+</LinearLayout>

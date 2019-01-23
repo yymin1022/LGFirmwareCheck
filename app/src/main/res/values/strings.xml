@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LGFirmwareChecker</string>
+	
+	<string name="chipset_mtk">Mediatek</string>
+	<string name="chipset_qct">Qualcomm Snapdragon</string>
+
+	<string name="main_button_check">Check Last Update</string>
+	<string name="main_edittext_hint">ex)LM-V409N</string>
+    <string name="main_text_input">Input Device Name (Empty to see ALL Devices)</string>
+	
+	<string name="operator_kt">KT</string>
+	<string name="operator_lgu">LG U+</string>
+	<string name="operator_skt">SKT</string>
+	<string name="operator_user">User Sufficiency</string>
+	
+	<string name="parse_loading">Loading...</string>
+	
+	<string name="result_device">Device</string>
+	<string name="result_no">No Result</string>
+	<string name="result_operator">Operator</string>
+	<string name="result_chipset">Chipset</string>
+	<string name="result_update">Last Update</string>
+
+</resources>
