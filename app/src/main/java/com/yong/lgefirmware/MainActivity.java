@@ -82,9 +82,10 @@ public class MainActivity extends AppCompatActivity
 		protected void onPreExecute()
 		{
 			super.onPreExecute();
-			
+
 			progressDialog.setProgressStyle(progressDialog.STYLE_SPINNER);
 			progressDialog.setMessage(getResources().getString(R.string.parse_loading));
+			progressDialog.setCancelable(false);
 			progressDialog.show();
 		}
 
